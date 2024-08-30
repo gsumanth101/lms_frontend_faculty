@@ -1,6 +1,6 @@
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Badge from '@mui/material/Badge';
+// import Badge from '@mui/material/Badge';
 import Toolbar from '@mui/material/Toolbar';
 import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -9,7 +9,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import IconifyIcon from 'components/base/IconifyIcon';
 import Image from 'components/base/Image';
 import LogoImg from 'assets/images/Logo.png';
-import LanguageSelect from './LanguageSelect';
+// import LanguageSelect from './LanguageSelect';
 import ProfileMenu from './ProfileMenu';
 
 interface TopbarProps {
@@ -79,11 +79,11 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
       </Stack>
 
       <Stack spacing={{ xs: 1, sm: 2 }} alignItems="center">
-        <LanguageSelect />
+        {/* <LanguageSelect /> */}
         <IconButton size="large">
-          <Badge color="error" variant="dot">
+          {/* <Badge color="error" variant="dot">
             <IconifyIcon icon="solar:bell-outline" />
-          </Badge>
+          </Badge> */}
         </IconButton>
         <ProfileMenu />
       </Stack>

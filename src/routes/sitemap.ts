@@ -20,13 +20,13 @@ export interface MenuItem {
 }
 
 const sitemap: MenuItem[] = [
-  {
-    id: 'signin',
-    subheader: 'Sign In',
-    path: '/',
-    icon: 'mynaui:lock-password',
-    active: true,
-  },
+  // {
+  //   id: 'dashboard',
+  //   subheader: 'Dashboard',
+  //   path: '/',
+  //   icon: 'hugeicons:grid-view',
+  //   active: true,
+  // },
   {
     id: 'dashboard',
     subheader: 'Overview',
@@ -34,48 +34,71 @@ const sitemap: MenuItem[] = [
     icon: 'hugeicons:grid-view',
   },
   {
-    id: 'task',
-    subheader: 'Task',
-    path: '#!',
-    icon: 'hugeicons:book-open-01',
-  },
+
+  id: 'courses',
+  subheader: 'Courses',
+  icon: 'hugeicons:book-open-01',
+  items: [
+    {
+      name: 'Courses',
+      pathName: 'signin',
+      icon: '',
+      path: paths.signin,
+    },
+    {
+      name: 'Assessments',
+      pathName: 'signup',
+      icon: '',
+      path: paths.signup,
+    },
+  ],
+},
+
+
+  // {
+  //   id: '',
+  //   subheader: 'Mentors',
+  //   path: '#!',
+  //   icon: 'mynaui:user-hexagon',
+  // },
   {
-    id: 'mentors',
-    subheader: 'Mentors',
-    path: '#!',
-    icon: 'mynaui:user-hexagon',
-  },
-  {
-    id: 'messages',
+    id: 'disscussion-forums',
     subheader: 'Messages',
     path: '#!',
     icon: 'mage:message-dots',
   },
   {
-    id: 'settings',
-    subheader: 'Settings',
+    id: 'profile',
+    subheader: 'Profile',
     path: '#!',
     icon: 'hugeicons:settings-01',
   },
+
   {
-    id: 'authentication',
-    subheader: 'Authentication',
-    icon: 'mynaui:lock-password',
-    items: [
-      {
-        name: 'Sign In',
-        pathName: 'signin',
-        icon: '',
-        path: paths.signin,
-      },
-      {
-        name: 'Sign Up',
-        pathName: 'signup',
-        icon: '',
-        path: paths.signup,
-      },
-    ],
+    id: 'change-password',
+    subheader: 'Change Password',
+    path: '#!',
+    icon: 'mynaui:lock',
   },
+  // {
+  //   id: 'authentication',
+  //   subheader: 'Authentication',
+  //   icon: 'mynaui:lock-password',
+  //   items: [
+  //     {
+  //       name: 'Sign In',
+  //       pathName: 'signin',
+  //       icon: '',
+  //       path: paths.signin,
+  //     },
+  //     {
+  //       name: 'Sign Up',
+  //       pathName: 'signup',
+  //       icon: '',
+  //       path: paths.signup,
+  //     },
+  //   ],
+  // },
 ];
 
 export default sitemap;

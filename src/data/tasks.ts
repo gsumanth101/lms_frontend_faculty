@@ -7,7 +7,7 @@ import {
   Avatar6,
   Avatar7,
   Avatar8,
-  Thumb1,
+  // Thumb1,
   Thumb2,
   Thumb3,
   Thumb4,
@@ -28,15 +28,15 @@ export interface Task {
 }
 
 export const tasks: Task[] = [
-  {
-    id: 1,
-    title: 'Creating Mobile App Design',
-    category: 'UI UX Design',
-    thumb: Thumb1,
-    progress: 75,
-    daysLeft: 3,
-    avatars: [Avatar3, Avatar1, Avatar6, Avatar8, Avatar2],
-  },
+  // {
+  //   id: 1,
+  //   title: 'Creating Mobile App Design',
+  //   category: 'UI UX Design',
+  //   thumb: Thumb1,
+  //   progress: 75,
+  //   daysLeft: 3,
+  //   avatars: [Avatar3, Avatar1, Avatar6, Avatar8, Avatar2],
+  // },
   {
     id: 2,
     title: 'Creating Perfect Website',

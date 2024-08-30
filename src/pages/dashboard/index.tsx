@@ -1,12 +1,12 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import Activity from 'components/sections/dashboard/activity';
+// import Activity from 'components/sections/dashboard/activity';
 import TaskToday from 'components/sections/dashboard/task-today';
-import RunningTask from 'components/sections/dashboard/running-task';
-import UpcomingTask from 'components/sections/dashboard/upcoming-task';
+// import RunningTask from 'components/sections/dashboard/running-task';
+import Courses from 'components/sections/dashboard/courses';
 import WeekCalendar from 'components/sections/dashboard/week-calendar';
 import TaskOverview from 'components/sections/dashboard/task-overview';
-import MonthlyMentors from 'components/sections/dashboard/monthly-mentors';
+// import MonthlyMentors from 'components/sections/dashboard/monthly-mentors';
 import Footer from 'components/common/Footer';
 
 const Dashboard = () => {
@@ -18,12 +18,12 @@ const Dashboard = () => {
           spacing={3.5}
           direction={{ xs: 'column', sm: 'row', md: 'column', xl: 'row' }}
         >
-          <RunningTask />
-          <Activity />
+          {/* <RunningTask />
+          <Activity /> */}
         </Stack>
 
-        <MonthlyMentors />
-        <UpcomingTask />
+        {/* <MonthlyMentors /> */}
+        <Courses />
         <TaskOverview />
 
         <Box display={{ xs: 'none', md: 'block' }}>
