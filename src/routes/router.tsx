@@ -6,6 +6,7 @@ import MainLayout from 'layouts/main-layout';
 import AuthLayout from 'layouts/auth-layout';
 import Splash from 'components/loader/Splash';
 import PageLoader from 'components/loader/PageLoader';
+import AssignmentDetailsPage from 'components/sections/dashboard/assisgnments/AssignmentDetailsPage';
 
 // Lazy load components
 const App = lazy(() => import('App'));
@@ -13,6 +14,8 @@ const Dashboard = lazy(() => import('pages/dashboard'));
 const Signin = lazy(() => import('pages/authentication/Signin'));
 const Signup = lazy(() => import('pages/authentication/Signup'));
 const AssignmentsPage = lazy(() => import('../components/sections/dashboard/assisgnments/Assignmentspage'));
+
+
 
 const router = createBrowserRouter([
   {
@@ -60,6 +63,16 @@ const router = createBrowserRouter([
           <MainLayout>
             <Suspense fallback={<PageLoader />}>
               <AssignmentsPage />
+            </Suspense>
+          </MainLayout>
+        ),
+      },
+      {
+        path: '/assignment/:id', // Route for assignment details
+        element: (
+          <MainLayout>
+            <Suspense fallback={<PageLoader />}>
+              <AssignmentDetailsPage />
             </Suspense>
           </MainLayout>
         ),
